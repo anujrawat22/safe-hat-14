@@ -244,6 +244,9 @@ form>:nth-child(5)+button{
     font-size: 15px;
 }
 
+form>:nth-child(5)+button:hover{
+    background-color: rgb(2, 196, 150);
+}
 form>:nth-child(7){
     width: 85%;
     height: 30px;

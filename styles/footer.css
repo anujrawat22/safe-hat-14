@@ -1,0 +1,29 @@
+#footerlink{
+    width: 32%;
+    height: 30px;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+}
+
+span{
+    font-size: 13px;
+    color:rgb(143, 143, 143) ;
+}
+
+#bottom{
+    width: 55%;
+    height: auto;
+    /* border: 1px solid red; */
+    margin: auto;
+    margin-top: .5%;
+}
+
+#bottom>p{
+    font-size: 12px;
+    text-align: center;
+    color:rgb(187, 187, 187);
+}
