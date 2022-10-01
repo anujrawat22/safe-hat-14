@@ -70,7 +70,7 @@
     padding-left: 20px;
 }
 
-#time-tracking>div>div>:nth-child(4){
+#emailbtn{
     height: 64px;
     width: 33%;
     margin-left: -9px;
@@ -82,6 +82,11 @@
     font-size: 12px;
     font-weight: bold;
     margin-bottom: 40px;
+}
+
+#emailbtn:hover{
+    background-color: rgb(1, 141, 108);
+    cursor: pointer;
 }
 
 input:focus{
@@ -341,17 +346,22 @@ width: 46%;
 margin: 0px ;
 }
 
-#start>:nth-child(1)>button{
-    height: 22%;
-    width: 15%;
+#strtbtn2{
+    height: 45px;
+    width: 120px;
     border-radius: 5px;
     border: 1px solid rgb(0,178,137);
     background-color: rgb(0,178,137);
     color: white;
+    font-size: 12px;
 }
 
-#start>:nth-child(1)>button:hover{
+
+   
+
+#strtbtn2:hover{
     background-color: rgb(0, 186, 142);
+    cursor: pointer;
 }
 
 #start>:nth-child(2){

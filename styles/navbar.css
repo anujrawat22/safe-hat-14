@@ -25,8 +25,12 @@ body{
     align-items: center;
 }
 
-#navbar>div>div>img{
+#navbar>div>div img{
     width: 68%;
+}
+
+#navbar>div>div>img:hover{
+    cursor: pointer;
 }
 #navbar>div>#navbar-menu{
     /* border: 1px solid green; */
@@ -40,11 +44,176 @@ body{
 
 #navbar-menu>:nth-child(1){
     width: 58%;
+    height: 100%;
     /* border: 1px solid gray; */
     display: flex;
     justify-content: space-around;
     font-size: 15px;
     color: #4c4d5f;
+    display: flex;
+    align-items: center;
+}
+
+#navbar-menu>:nth-child(1) #products{
+/* border: 1px solid red; */
+height: 68px;
+width: 80px;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+#products:hover #products1{
+    visibility: visible;
+}
+
+#products:hover{
+    cursor: pointer;
+}
+
+#products1{
+/* border: 1px solid red; */
+position: fixed;
+z-index: 2;
+height: 72%;
+width: 23%;
+margin-top: 20px;
+top: 5%;
+left: 28%;
+background-color: #fff;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+box-shadow: 0 1px 60px 0 rgb(2 4 69 / 10%);
+visibility: hidden;
+}
+
+#products1>:nth-child(1){
+    height: 28%;
+    width: 90%;
+    margin: auto;
+    
+    margin-top: 11px;
+    text-align: justify;
+    text-justify: inter-word;
+    margin-left: 30px;
+}
+
+#wrkflwchild{
+    display: flex;
+}
+
+#wrkflwchild>:nth-child(1){
+    height: 100%;
+    width: 87%;
+    border-bottom:1px solid rgb(175, 175, 175) ;
+}
+
+#wrkflwchild>:nth-child(2){
+ height: 136px;
+ width: 13%;
+ /* border: 1px solid black; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ visibility: hidden;
+}
+#products1>:nth-child(2){
+    height: 28%;
+    width: 76%;
+    margin: auto;
+    border-bottom:1px solid rgb(175, 175, 175) ;
+    margin-top: 0px;
+    text-align: justify;
+    text-justify: inter-word;
+}
+#products1>:nth-child(3){
+    height: 20%;
+    width: 76%;
+    margin: auto;
+    margin-top: 2px;
+    text-align: justify;
+
+}
+#products1>div>h2{
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-family: "Amerigo BT"; src: url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.eot"); src: url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.svg#Amerigo BT") format("svg"); 
+  font-weight: 600;
+}
+#products1>div>p{
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+#bonsaiworkflow:hover #workflow{visibility: visible;}
+
+#bonsaiworkflow:hover #chevron{visibility: visible;}
+
+
+#workflow{
+    position: fixed;
+    z-index: 2;
+    width : 42.7%;
+    height:71.8%;
+    left:51%;
+    top: 8%;
+    /* border: 1px solid red; */
+    background-color: #fff;
+    visibility: hidden;
+
+}
+
+
+#workflow>div{
+    width: 89%;
+    height: 87%;
+    margin: auto;
+    margin-top: 25px;
+    /* border: 1px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(4,1fr);
+    column-gap: 40px;
+}
+
+#workflow>div>div{
+    /* border: 1px solid blue; */
+}
+
+#workflow h4{
+    font-size: 13px;
+    margin-bottom:0px;
+}
+#workflow p{
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+.workflowimg{
+    display: flex;
+    /* border: 1px solid red; */
+    align-items: center;
+    justify-content: flex-start;
+    height: auto;
+}
+ 
+.workflowimg>:nth-child(1){
+    width: 25px;
+    height: auto;
+    /* border: 1px solid blue; */
+    display: inline;
+}
+
+.head4{
+    display: flex;
+    align-items: center;
+    /* border: 1px solid red; */
+    justify-content: center;
+    width: auto;
+    padding-bottom: 20px;
+    padding-left: 0px;
+    height: 17px;
 }
 
 #navbar-menu>:nth-child(2){
@@ -54,7 +223,7 @@ body{
    
 }
 
-#navbar-menu>:nth-child(2)>:nth-child(1){
+#navbar-menu>:nth-child(2)>:nth-child(1)>button{
     height: 100%;
     width: 33%;
     color: rgb(0,178,137);
@@ -65,11 +234,12 @@ body{
     font-weight: bold;
 }
 
-#navbar-menu>:nth-child(2)>:nth-child(1):hover{
+#navbar-menu>:nth-child(2)>:nth-child(1)>button:hover{
    background-color: rgb(0,178,137);
    color: white;
+   cursor: pointer;
 }
-#navbar-menu>:nth-child(2)>:nth-child(2){
+.strtbtn{
     height: 100%;
     width: 50%;
     margin-left: 10px;
@@ -79,11 +249,15 @@ body{
     border-radius: 4px;
     font-size: 11px;
     font-weight: bold;
+    overflow: hidden;
 }
 
-#navbar-menu>:nth-child(2)>:nth-child(2):hover{
+.strtbtn:hover{
     background-color: rgb(2, 151, 116);
+    cursor: pointer;
 }
+
+
 
 @font-face {
 	font-family: 'proxima_nova_rgregular';
@@ -122,6 +296,12 @@ body{
 h1{
     font-family: "Amerigo BT"; src: url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.eot"); src: url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.svg#Amerigo BT") format("svg"); 
     font-weight: 100;
+}
+
+
+h2{
+    font-family: "Amerigo BT"; src: url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.eot"); src: url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.eot?#iefix") format("embedded-opentype"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.woff2") format("woff2"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.woff") format("woff"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.ttf") format("truetype"), url("//db.onlinewebfonts.com/t/ab9e8eea3710ad4417e4a318556bc614.svg#Amerigo BT") format("svg"); 
+
 }
 
 p{

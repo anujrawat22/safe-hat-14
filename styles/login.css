@@ -23,9 +23,9 @@ display: flex;
     justify-content: center;
 }
 
-#nav>:nth-child(1)>img{
-    width: 40%;
-    
+#nav>:nth-child(1) img{
+    width: 30px;
+    margin-left: 20px;
 }
 
 #nav>:nth-child(2){
@@ -195,3 +195,6 @@ input:focus{
        outline: none;
 }
 
+a{
+    text-decoration: none;
+}
